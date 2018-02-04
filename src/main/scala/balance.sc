@@ -9,8 +9,8 @@ object task2{
       if (chars.isEmpty)
         nLeft == 0
       else if (nLeft < 0)
-      /* to stop as soon as despalance found
-       * so no need to wait untill the whole string in processed */
+      /* to stop as soon as disbalance found
+       * so no need to wait until the whole string in processed */
         false
       else if (chars.head == '(')
         balanceMaker(nLeft + 1, chars.tail)
@@ -25,4 +25,6 @@ object task2{
   balance("this (is) demo (of work)".toList)
   balance("=)".toList)
   balance("(fdfs))".toList)
+  balance("((((()".toList)
+  balance("())()".toList)
 }
