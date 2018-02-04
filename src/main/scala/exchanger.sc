@@ -3,7 +3,6 @@ object task3{
     * The list of coins on the input should be with distinct coins.
     */
   def countChange(money: Int, coins: List[Int]): Int = {
-    coins.distinct
     if (money == 0)
       1
     else if (!coins.isEmpty && money > 0)
