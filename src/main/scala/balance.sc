@@ -1,7 +1,8 @@
 object task2{
 
   /** Returns 'true' iff the parantheses in the input List are balance;
-    * in case the input List is empty returns true */
+    * in case the input List is empty returns true
+    */
 
   def balance(chars: List[Char]): Boolean = {
     @annotation.tailrec
